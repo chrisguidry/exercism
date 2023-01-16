@@ -1,2 +1,3 @@
 #!/bin/bash
-swipl -f $(basename `pwd`).pl -s $(basename `pwd`)_tests.plt -g run_tests,halt -t 'halt(1)'
+exercise=$(basename `pwd` | tr '-' '_')
+swipl -f ${exercise}.pl -s ${exercise}_tests.plt -g run_tests,halt -t 'halt(1)'
