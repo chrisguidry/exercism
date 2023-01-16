@@ -1,0 +1,5 @@
+# Running tests
+
+```bash
+swipl -f $(basename `pwd`).pl -s $(basename `pwd`)_tests.plt -g run_tests,halt -t 'halt(1)'
+```
