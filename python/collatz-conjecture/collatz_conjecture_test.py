@@ -1,8 +1,6 @@
 import unittest
 
-from collatz_conjecture import (
-    steps,
-)
+from collatz_conjecture import steps
 
 # Tests adapted from `problem-specifications//canonical-data.json`
 

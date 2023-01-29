@@ -15,7 +15,7 @@
   ```python
      >>> item = 'blue'
      >>> item_2 = 'green'
-     
+
      >>>  if len(item) >=3 and len(item_2) < 5:
             print('Both pass the test!')
           elif len(item) >=3 or len(item_2) < 5:

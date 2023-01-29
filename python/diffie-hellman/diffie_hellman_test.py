@@ -1,10 +1,6 @@
 import unittest
 
-from diffie_hellman import (
-    private_key,
-    public_key,
-    secret,
-)
+from diffie_hellman import private_key, public_key, secret
 
 # Tests adapted from `problem-specifications//canonical-data.json`
 

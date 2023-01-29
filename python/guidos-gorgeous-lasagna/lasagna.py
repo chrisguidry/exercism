@@ -18,11 +18,14 @@ def bake_time_remaining(elapsed_bake_time: int) -> int:
     """
     return EXPECTED_BAKE_TIME - elapsed_bake_time
 
+
 PREPARATION_TIME = 2
+
 
 def preparation_time_in_minutes(layers: int) -> int:
     """Calculate the preparation time in minutes"""
     return PREPARATION_TIME * layers
+
 
 def elapsed_time_in_minutes(layers: int, elapsed_bake_time: int):
     """Calculate the elapsed time in minutes that you've been baking"""

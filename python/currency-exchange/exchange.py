@@ -64,5 +64,5 @@ def exchangeable_value(budget, exchange_rate, spread, denomination):
     """
 
     actual_rate = exchange_rate + (exchange_rate * (spread / 100))
-    wanted =  exchange_money(budget, actual_rate)
+    wanted = exchange_money(budget, actual_rate)
     return wanted - (wanted % denomination)

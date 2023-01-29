@@ -15,11 +15,11 @@ def value_of_card(card, hand=tuple()):
     2.  'A' (ace card) = 1
     3.  '2' - '10' = numerical value.
     """
-    if card == 'A':
-        if 'A' in hand:
+    if card == "A":
+        if "A" in hand:
             return 11
         return 1
-    if card in ('J', 'Q', 'K'):
+    if card in ("J", "Q", "K"):
         return 10
     return int(card)
 
@@ -41,12 +41,11 @@ def higher_card(card_one, card_two):
         return card_two
     return (card_one, card_two)
 
+
 def value_of_hand(card_one, card_two):
     hand = (card_one, card_two)
-    return (
-        value_of_card(card_one, hand=hand) +
-        value_of_card(card_two, hand=hand)
-    )
+    return value_of_card(card_one, hand=hand) + value_of_card(card_two, hand=hand)
+
 
 def value_of_ace(card_one, card_two):
     """Calculate the most advantageous value for the ace card.

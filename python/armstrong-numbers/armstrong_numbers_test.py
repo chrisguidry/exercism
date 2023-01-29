@@ -1,8 +1,6 @@
 import unittest
 
-from armstrong_numbers import (
-    is_armstrong_number,
-)
+from armstrong_numbers import is_armstrong_number
 
 # Tests adapted from `problem-specifications//canonical-data.json`
 
